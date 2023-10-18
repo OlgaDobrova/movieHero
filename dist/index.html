@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+	<main class="main">
+		<div class="sidebar">
+			<h1 class="title" id="title">Герои фильмов</h1>
+			<div class="block-checkbox">
+				<div class="label">Фильтры:</div>
+				<div class="main-controls__checkbox">
+					<input class="custom-checkbox start-disabled" type="checkbox" id="speciesCheckbox" name=""/>
+					<label for="speciesCheckbox">Вид</label>
+				</div>
+				<div class="main-sidebar__item">
+					<select name="views-select" class="list-species">
+						<option value="" selected>Выберите вид</option>
+					</select>
+				</div>
+				<div class="main-controls__checkbox">
+					<input class="custom-checkbox start-disabled" type="checkbox" id="genderСheckbox" name="" />
+					<label for="genderСheckbox">Пол</label>
+				</div>
+				<div class="main-sidebar__item">
+					<select name="views-select" class="list-gender">
+						<option value="" selected>Выберите пол</option>
+					</select>
+				</div>
+				<div class="main-controls__checkbox">
+					<input class="custom-checkbox start-disabled" type="checkbox" id="statusСheckbox" name="" />
+					<label for="statusСheckbox">Статус</label>
+				</div>
+				<div class="main-sidebar__item">
+					<select name="views-select" class="list-status">
+						<option value="" selected>Выберите статус</option>
+					</select>
+				</div>
+				<div class="main-controls__checkbox">
+					<input class="custom-checkbox start-disabled" type="checkbox" id="actorsСheckbox" name="" />
+					<label for="actorsСheckbox">Актёр</label>
+				</div>
+				<div class="main-sidebar__item">
+					<select name="views-select" class="list-actors">
+						<option value="" selected>Выберите актёра</option>
+					</select>
+				</div>
+				<div class="main-controls__checkbox">
+					<input class="custom-checkbox start-disabled" type="checkbox" id="moviesСheckbox" name="" />
+					<label for="moviesСheckbox">Фильм</label>
+				</div>
+				<div class="main-sidebar__item">
+					<select name="views-select" class="list-movies">
+						<option value="" selected>Выберите фильм</option>
+					</select>
+				</div>
+			</div>
+			<div class="main-controls__buttons">
+				<button class="start-btn">Сформировать список</button>
+				<button class="reset-btn">Очистить фильтры</button>
+			</div>
+			<div class="main-sidebar__item">
+				<select name="views-select" class="list-heroes">
+					<option value="" selected>Сделайте свой выбор</option>
+				</select>
+			</div>
+		</div>
+		<div class="main-box">
+			<div class="main-photo">
+			</div>
+			<div class="main-total">
+				<div class="main-total__items">
+					<div class="main-total__item">
+						<div class="label">Имя</div>
+						<div class="item" id="name"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Настоящее имя</div>
+						<div class="item" id="real-name"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Вид</div>
+						<div class="item" id="species"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Пол</div>
+						<div class="item" id="gender"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Год рождения</div>
+						<div class="item" id="birth-day"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Год смерти</div>
+						<div class="item" id="death-day"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Статус</div>
+						<div class="item" id="status"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Актёр</div>
+						<div class="item" id="actors"></div>
+					</div>
+					<div class="main-total__item">
+						<div class="label">Фильмы</div>
+						<ol class="item" id="movies"></ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

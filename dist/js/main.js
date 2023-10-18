@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("one module"),console.log("webpack"),console.log("ggggggg"),console.log("two module")})();
